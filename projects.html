@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Dina</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #b30000;
+      padding: 2rem 3rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ff4040;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #ff4040;
+    }
+    .projects-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+    .project-item {
+      background: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 5px solid #b30000;
+      width: 90%;
+      max-width: 300px;
+    }
+    .project-item img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .project-item p {
+      margin-top: 10px;
+    }
+    footer {
+      background: #b30000;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      color: white;
+    }
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px 15px;
+      background: #b30000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certificate.html">Certificate</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Modul yang Saya Buat</h1>
+    <section class="projects-gallery">
+      <div class="project-item">
+        <img src="mtcna.png" alt="Modul 1">
+        <p>Modul MTCNA Management Jaringan</p>
+        <a href="https://drive.google.com/file/d/1BNek9sCutOi3rGMqXGBTsMfXW2nnxx5w/view?usp=sharing">Modul mtcna</a>
+      </div>
+      <div class="project-item">
+        <img src="debian.png" alt="Modul 2">
+        <p>Modul Debian 11 Management DNS Server dan Web Server</p>
+        <a href="https://drive.google.com/file/d/1JlZ8W4yr_cO4fjowirJ9b6mHEXAtEWKI/view?usp=sharing">Modul Debian</a>
+      </div>
+      <div class="project-item">
+        <img src="cisco.png" alt="Modul 3">
+        <p>Simulasi Jaringan menggunakan Cisco, Switching Management</p>
+        <a href="https://drive.google.com/file/d/1fQFN-DhVdG0YYCtVwDlbHs4UXY4L2EYi/view?usp=sharing">Modul CCNA</a>
+      </div>
+      <div class="project-item">
+        <img src="sampul python.png" alt="Modul 4">
+        <p>Modul Python Dasar - Pemrograman dasar dengan Python untuk pemula. (modul ini dibuat gabungan) </p>
+        <a href="https://drive.google.com/file/d/1JbigQlUOh-KPMD_CzQXz5QHHYHtzdHQg/view?usp=sharing">Modul Python</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Portofolio Dina Riska Nasrilla</p>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

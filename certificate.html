@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate - Dina</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #b30000;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ff4040;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    .certificate-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .certificate-item {
+      background: #222;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 5px solid #b30000;
+    }
+    .certificate-item img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .certificate-item p {
+      margin-top: 10px;
+    }
+    footer {
+      background: #b30000;
+      text-align: center;
+      padding: 1rem;
+      color: white;
+    }
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 10px 15px;
+      background: #b30000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="certificate.html" class="active">Certificate</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sertifikat Saya</h1>
+    <section class="certificate-gallery">
+      <!-- Contoh sertifikat, duplikasi hingga 14 item -->
+      <div class="certificate-item">
+        <img src="mtcna coba.jpeg" alt="Sertifikat 1">
+        <p>Sertifikat MTCNA Resmi (2023 - 2027) </p>
+      </div>
+      <div class="certificate-item">
+        <img src="always ngoding.jpeg" alt="Sertifikat 2">
+        <p>Course Always Ngoding</p>
+      </div>
+      <div class="certificate-item">
+        <img src="bootcamp mtctce.jpeg" alt="Sertifikat 3">
+        <p>Bootcamp MTCTCE SMKN 1 Nglegok</p>
+      </div>
+      <div class="certificate-item">
+        <img src="fortinet 1.0.jpeg" alt="Sertifikat 4">
+        <p>introduction to Cybersecurity</p>
+      </div>
+      <div class="certificate-item">
+        <img src="fortinet 2.0.jpeg" alt="Sertifikat 5">
+        <p>Gatting Started to Cybersecurity</p>
+      </div>
+      <div class="certificate-item">
+        <img src="fortinet 2.0 self.jpeg" alt="Sertifikat 6">
+        <p>Indroduction to the threat Landscape</p>
+      </div>
+      <div class="certificate-item">
+        <img src="linux.jpeg" alt="Sertifikat 7">
+        <p>Course Linux Fundamental from Aguna Course</p>
+      </div>
+      <div class="certificate-item">
+        <img src="network.jpeg" alt="Sertifikat 8">
+        <p>Mikrotik Fundamental from Aguna Course2</p>
+      </div>
+      <div class="certificate-item">
+        <img src="pnet.jpeg" alt="Sertifikat 9">
+        <p>Simulasi Jaringan dengan PNET-Lab from Aguna Course</p>
+      </div>
+      <div class="certificate-item">
+        <img src="python.jpeg" alt="Sertifikat 10">
+        <p>Dasar - Dasar Python from Aguna Course</p>
+      </div>
+      <div class="certificate-item">
+        <img src="redhat.jpeg" alt="Sertifikat 11">
+        <p>Course from redhat</p>
+      </div>
+      <div class="certificate-item">
+        <img src="virtual machine.jpeg" alt="Sertifikat 12">
+        <p>Virtual machine from Aguna Course</p>
+      </div>
+      <div class="certificate-item">
+        <img src="bootcamp idn.jpeg" alt="Sertifikat 13">
+        <p>Bootcamp MTCNA SMKN 1 Nglegok from ID.Networkers</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Portofolio Dina Riska Nasrilla</p>
+  </footer>
+
+  <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
